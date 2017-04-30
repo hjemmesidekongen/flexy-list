@@ -1,0 +1,84 @@
+// |--------------------------------------------------------------------------
+// | List
+// |--------------------------------------------------------------------------
+// |
+// | This file contains styles for the following:
+// | - .flexy-list
+// |
+
+// --------------------------------------------------
+// Variables
+// --------------------------------------------------
+
+@flexy-list-item-spacing: 30px;
+
+// --------------------------------------------------
+// Mixins
+// --------------------------------------------------
+
+.flexy-list-mixin() {}
+
+// --------------------------------------------------
+// Styling
+// --------------------------------------------------
+
+.flexy-list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	> * {
+		padding: 0 floor( (@flexy-list-item-spacing / 2) );
+
+		&:first-child {
+			padding-left: 0;
+		}
+
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+}
+
+// --------------------------------------------------
+// Variants
+// --------------------------------------------------
+
+// --------------------------------------------------
+// Responsive
+// --------------------------------------------------
+
+// Mobile - and up
+@media @media-query-mobile {}
+
+// Mobile - only
+@media @media-query-mobile-only {}
+
+// Tablet - and up
+@media @media-query-tablet {}
+
+// Tablet - only
+@media @media-query-tablet-only {}
+
+// Desktop - and up
+@media @media-query-desktop {}
+
+// Desktop - only
+@media @media-query-desktop-only {}
+
+// Large desktop - and up
+@media @media-query-large-desktop {}
+
+// Print
+@media print {}
+
+// Touch
+.touchevents {}
+
+// No touch
+.no-touchevents {}
+
