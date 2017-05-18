@@ -1,6 +1,6 @@
 {
   "name": "flexy-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Easy flexible lists with CSS.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
