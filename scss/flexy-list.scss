@@ -32,11 +32,7 @@
 	margin: 0;
 
 	> * {
-		padding: 0 floor( ($flexy-list-item-spacing / 2) );
-
-		&:first-child {
-			padding-left: 0;
-		}
+		padding: 0 $flexy-list-item-spacing 0 0;
 
 		&:last-child {
 			padding-right: 0;
